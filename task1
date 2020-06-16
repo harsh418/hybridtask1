@@ -1,6 +1,6 @@
 	provider "aws"{
 	region = "ap-south-1"
-	profile = "yadav"
+	profile = "Harsh"
 	}
 	
 	//Here I have created the key by GUI
@@ -154,11 +154,11 @@
 	depends_on = [
 	aws_s3_bucket.bucket-img
 	]
-	key = "yadav.jpg"
+	key = "harsh.jpg"
 	bucket = aws_s3_bucket.bucket-img.bucket
 	acl = "public-read"
-	source = "C:\\Users\\LENOVO PC\\Desktop\\my-image\\yadav.jpg"
-	etag = "${filemd5("C:\\Users\\LENOVO PC\\Desktop\\my-image\\yadav.jpg")}"
+	source = "C:\\Users\\STUDENT\\Desktop\\my-image\\harsh.jpg"
+	etag = "${filemd5("C:\\Users\\STUDENT\\Desktop\\my-image\\harsh.jpg")}"
 	}
 	
 	locals {
